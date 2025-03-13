@@ -1,0 +1,192 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalized Health Journey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to Your Personalized Health Journey</h1>
+        <p>Start your fitness routine with AI guidance.</p>
+        <button class="btn">Learn More</button>
+        <button class="btn">Get Started</button>
+    </header>
+
+    <section class="products">
+        <h2>Recommended Products for You</h2>
+        <div class="product-list">
+            <div class="product">
+                <img src="protein-powder.jpg" alt="Protein Powder">
+                <h3>Protein Powder</h3>
+                <p>Muscle Recovery</p>
+            </div>
+            <div class="product">
+                <img src="yoga-mat.jpg" alt="Yoga Mat">
+                <h3>Yoga Mat</h3>
+                <p>Eco-friendly and durable</p>
+            </div>
+            <div class="product">
+                <img src="fitness-tracker.jpg" alt="Fitness Tracker">
+                <h3>Fitness Tracker</h3>
+                <p>Monitor your daily activities</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="articles">
+        <h2>Health Articles and Tips</h2>
+        <ul>
+            <li>10 Foods for a Healthier Life</li>
+            <li>5 Exercises for Beginners</li>
+            <li>Mental Health Importance</li>
+        </ul>
+    </section>
+
+    <section class="testimonials">
+        <h2>What Users Say</h2>
+        <div class="testimonial">
+            <p>"Fantastic app for tracking!"</p>
+            <span>- Emily</span>
+        </div>
+        <div class="testimonial">
+            <p>"Incredibly helpful in achieving fitness goals!"</p>
+            <span>- John</span>
+        </div>
+    </section>
+
+    <section class="subscribe">
+        <h2>Subscribe for Updates</h2>
+        <p>Get the latest health and fitness tips directly in your inbox.</p>
+        <input type="email" placeholder="Enter your email">
+        <button class="btn">Subscribe</button>
+    </section>
+
+    <section class="progress">
+        <h2>Your Health Progress</h2>
+        <p>Steps Taken: <strong>8,500</strong> (+15%)</p>
+        <p>Calories Burned: <strong>750</strong> (-10%)</p>
+        <p>Weight: <strong>65 kg</strong> (-3 kg)</p>
+    </section>
+
+    <section class="social">
+        <h2>Community Posts</h2>
+        <div class="post">
+            <p><strong>Alex</strong> - 2h ago</p>
+            <p>Great workout session today!</p>
+        </div>
+        <div class="post">
+            <p><strong>Sarah</strong> - 1d ago</p>
+            <p>Fitness Motivation</p>
+        </div>
+    </section>
+
+</body>
+</html>
+2 css code
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+}
+
+.btn {
+    background-color: #27ae60;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.btn:hover {
+    background-color: #219150;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background: white;
+    border-radius: 10px;
+}
+
+.products {
+    text-align: center;
+}
+
+.product-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product {
+    background: #ecf0f1;
+    padding: 15px;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+.product img {
+    width: 100px;
+    height: 100px;
+}
+
+.articles ul {
+    list-style: none;
+    padding: 0;
+}
+
+.articles li {
+    background: #dff9fb;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.testimonials {
+    text-align: center;
+}
+
+.testimonial {
+    background: #f9e79f;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.subscribe {
+    text-align: center;
+}
+
+.subscribe input {
+    padding: 10px;
+    width: 80%;
+    max-width: 300px;
+    margin: 10px 0;
+}
+
+.progress {
+    text-align: center;
+    font-size: 18px;
+}
+
+.social .post {
+    background: #aed6f1;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
