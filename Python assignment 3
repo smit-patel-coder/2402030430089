@@ -1,32 +1,19 @@
 import random
 
-def get_computer_choice():
-    return random.choice(["stone", "paper", "scissors"])
+def roll_dice(sides):
+    return random.randint(1, sides)
 
-def get_winner(player, computer):
-    if player == computer:
-        return "It's a tie!"
-    elif (player == "stone" and computer == "scissors") or \
-         (player == "scissors" and computer == "paper") or \
-         (player == "paper" and computer == "stone"):
-        return "You win!"
-    else:
-        return "Computer wins!"
+while True:
+    try:
+        sides = int(input("Enter the number of sides on the dice (e.g., 6 for a standard die): "))
+        rolls = int(input("Enter how many times you want to roll: "))
 
-def main():
-    print("Welcome to Stone, Paper, Scissors!")
-    while True:
-        player_choice = input("Enter 'stone', 'paper', or 'scissors' (or 'quit' to exit): ").lower()
-        if player_choice == "quit":
+        for i in range(rolls):
+            print(f"Roll {i+1}: {roll_dice(sides)}")
+
+        again = input("Roll again? (y/n): ").strip().lower()
+        if again != 'y':
             print("Thanks for playing!")
             break
-        elif player_choice not in ["stone", "paper", "scissors"]:
-            print("Invalid choice, try again.")
-            continue
-        
-        computer_choice = get_computer_choice()
-        print(f"Computer chose: {computer_choice}")
-        print(get_winner(player_choice, computer_choice))
-
-if __name__ == "__main__":
-    main()
+    except ValueError:
+        print("Please enter a valid number.")
